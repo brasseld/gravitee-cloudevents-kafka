@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package protobuf;
+option java_package = "com.xylem.helios.fcw.event.api";
+option java_outer_classname = "WaterMeterEvent";
+
+message Event {
+  required int32 app_code = 1;
+  required int64 time_of_intercept = 2;
+  required int32 flexnet_id = 3;
+  required string meter_id = 4;
+  required int32 device_type = 5;
+  required string meter_type = 6;
+  required string meter_class = 7;
+}
